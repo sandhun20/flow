@@ -1,0 +1,6 @@
+political_parties = {'Tories' : 25000, 'Labour': 75000}
+total_number_of_votes = 100000
+for parties in political_parties.keys():
+    party_votes = political_parties.get(parties)
+    vote_share = party_votes / total_number_of_votes * 100
+    print(f'the {parties} party received {party_votes}, a vote share of {vote_share} per cent')
